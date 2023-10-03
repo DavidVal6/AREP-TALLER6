@@ -1,0 +1,5 @@
+# Created at 2023-10-02T22:15:22.769
+Boot Manifest-JAR contains absolute paths in classpath 'D:\documentos\2023-2\AREP\TALLERES\TALLER6\awsTaller\proyect\robbingsecond\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

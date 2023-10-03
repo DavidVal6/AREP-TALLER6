@@ -1,0 +1,52 @@
+version: '3'
+services:
+  clase1:
+    build:
+      context: ./roundrobin  # Ruta al directorio de Clase1
+    ports:
+      - "4567:4567"
+    command: mvn clean compile exec:java  # Comando para ejecutar con Maven
+    networks:
+      - red1
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - red1
+
+  clase2_1:
+    build:
+      context: ./robbingsecond  # Ruta al directorio de Clase2
+    ports:
+      - "4568:4568"
+    networks:
+      - red1
+    depends_on:
+      - mongodb
+
+  clase2_2:
+    build:
+      context: ./robbingsecond  # Ruta al directorio de Clase2
+    ports:
+      - "4569:4568"
+    networks:
+      - red1
+    depends_on:
+      - mongodb
+
+  clase2_3:
+    build:
+      context: ./robbingsecond  # Ruta al directorio de Clase2
+    ports:
+      - "4570:4568"
+    networks:
+      - red1
+    depends_on:
+      - mongodb
+
+networks:
+  red1:

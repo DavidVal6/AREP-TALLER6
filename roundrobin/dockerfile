@@ -1,0 +1,9 @@
+FROM openjdk:17
+
+COPY /target/classes /usrapp/bin/classes
+COPY /target/dependency /usrapp/bin/dependency
+
+ENV PORT 4567
+
+
+CMD ["mvn", "clean", "compile", "exec:java"]
