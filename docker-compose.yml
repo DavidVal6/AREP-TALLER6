@@ -5,7 +5,6 @@ services:
       context: ./roundrobin  # Ruta al directorio de Clase1
     ports:
       - "4567:4567"
-    command: mvn clean compile exec:java  # Comando para ejecutar con Maven
     networks:
       - red1
     depends_on:

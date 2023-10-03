@@ -26,6 +26,7 @@ public class Service {
             String val = req.queryParams("message");
             return logMessage(val);
         });
+
     }
 
     private static String logMessage(String val) {
