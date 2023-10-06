@@ -9,9 +9,9 @@ import java.net.URL;
 public class HTTPConection {
 
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String[] LOG_SERVERS = new String[] { "http://localhost:4568",
-            "http://localhost:4569",
-            "http://localhost:4570",
+    private static final String[] LOG_SERVERS = new String[] { "http://service-1:4568",
+            "http://service-2:4569",
+            "http://service-3:4570",
     };
 
     private static int currentServer = 0;

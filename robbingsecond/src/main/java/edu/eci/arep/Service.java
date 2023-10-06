@@ -30,7 +30,7 @@ public class Service {
     }
 
     private static String logMessage(String val) {
-        try (MongoClient client = new MongoClient("localhost", 27017)) {
+        try (MongoClient client = new MongoClient("mongo-db", 27017)) {
             MongoDatabase database = client.getDatabase("mydb");
             MongoCollection<Document> collection = database.getCollection("log");
     

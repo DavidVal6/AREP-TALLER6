@@ -1,51 +1,39 @@
 version: '3'
 services:
-  clase1:
-    build:
-      context: ./roundrobin  # Ruta al directorio de Clase1
+  robin:
+    image: robin:latest
     ports:
       - "4567:4567"
-    networks:
-      - red1
-    depends_on:
-      - mongodb
+    container_name: robin
 
-  mongodb:
+  mongo-db:
     image: mongo
+    container_name: 'mongo-db'
+    volumes:
+        - 'mongodb:/data/db'
+        - 'mongodb_config:/data/configdb'
     ports:
-      - "27017:27017"
-    networks:
-      - red1
+        - '27017:27017'
+    command: 'mongod'
 
-  clase2_1:
-    build:
-      context: ./robbingsecond  # Ruta al directorio de Clase2
+  service-1:
+    image: service:latest
     ports:
       - "4568:4568"
-    networks:
-      - red1
-    depends_on:
-      - mongodb
+    container_name: service-1
 
-  clase2_2:
-    build:
-      context: ./robbingsecond  # Ruta al directorio de Clase2
+  service-2:
+    image: service:latest # Ruta al directorio de Clase2
     ports:
       - "4569:4568"
-    networks:
-      - red1
-    depends_on:
-      - mongodb
+    container_name: service-2
 
-  clase2_3:
-    build:
-      context: ./robbingsecond  # Ruta al directorio de Clase2
+  service-3:
+    image: service:latest # Ruta al directorio de Clase2
     ports:
       - "4570:4568"
-    networks:
-      - red1
-    depends_on:
-      - mongodb
+    container_name: service-3
 
-networks:
-  red1:
+volumes:
+    mongodb:
+    mongodb_config:
