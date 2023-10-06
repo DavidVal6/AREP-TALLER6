@@ -11,13 +11,13 @@ public class App
         get("hello", (req,res) -> "Hello Docker!");
         get("/log",(req,res) -> {
             String val = req.queryParams("value");
-            return logMessage(val);
+            return HTTPConection.getLogs(val);
         });
     }
-    private static String logMessage(String val) throws IOException {
-        //round robing
-        return HTTPConection.remoteLogCall(val);
-    }
+    // private static String logMessage(String val) throws IOException {
+    //     //round robing
+    //     return HTTPConection.getLogs(val);
+    // }
     private static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
