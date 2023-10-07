@@ -9,6 +9,10 @@ Asegúrate de tener Docker y Docker Compose instalados en tu sistema. Puedes des
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
+(Opcional)
+Si se quiere se puede hacer el pull de las diferentes imagenes del siguiente docker hub:
+- [davidval6/areptalleraws](https://hub.docker.com/repository/docker/davidval6/areptalleraws/general)
+
 ## Descarga del Proyecto
 
 Para obtener el código fuente del proyecto, clona el repositorio desde GitHub:
