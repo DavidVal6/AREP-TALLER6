@@ -97,8 +97,11 @@ htttp://localhost:4567/
 Y empezar a probar.
 
 ## PRUEBAS DE FUNCIONAMIENTO
+![image](https://github.com/DavidVal6/AREP-TALLER6/assets/98176834/4d3e7581-9e70-4d03-8ab9-e858118156a8)
+![image](https://github.com/DavidVal6/AREP-TALLER6/assets/98176834/d6d01117-f7dc-455d-a679-dab445729656)
 
-
+### Video de Prueba de funcionamiento con AWS:
+https://pruebacorreoescuelaingeduco.sharepoint.com/:v:/s/yo818/EW2_9B1FcBtPjeWiHRtcPqkBSbOa25tM8qUO_MHJP8IReQ?e=6qlc0I&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19
 ## Autor
 Autor : David Eduardo Valencia
 
